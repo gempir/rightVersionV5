@@ -7,11 +7,12 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 720, height: 480})
 
-  // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL("https://rightversion.gempir.com")
 
+  // mainWindow.setMenu(null);
+      
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 

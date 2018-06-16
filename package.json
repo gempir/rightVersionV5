@@ -1,22 +1,29 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^2.0.0"
-  }
+    "name": "right-version",
+    "version": "5.0.0",
+    "description": "A gachi player",
+    "main": "main.js",
+    "author": "gempir",
+    "license": "MIT",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "postinstall": "electron-builder install-app-deps",
+    "devDependencies": {
+        "electron": "^2.0.0"
+    },
+    "build": {
+        "productName": "rightVersion",
+        "appId": "com.gempir.rightVersionV5",
+        "mac": {
+            "category": "public.app-category.entertainment"
+        },
+        "win": {
+            "target": [
+                "portable"
+            ]
+        }
+    }
 }
