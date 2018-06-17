@@ -30,6 +30,14 @@ function createWindow() {
                mainWindow.reload();
           });
      });
+
+     globalShortcut.register('f11', () => {
+        if (mainWindow.isSimpleFullScreen()) {
+            mainWindow.setSimpleFullScreen(false);
+        } else {
+            mainWindow.setSimpleFullScreen(true);
+        }
+   });
 }
 
 
