@@ -7,7 +7,7 @@
         "react-dom": "^16.2.0",
         "react-md": "^1.2.11",
         "web-audio-analyser": "^2.0.1",
-        "whatwg-fetch": "^2.0.3"
+        "whatwg-fetch": "^3.0.0"
     },
     "scripts": {
         "start": "webpack-dev-server --mode development --content-base public",
@@ -21,11 +21,11 @@
         "@babel/preset-env": "^7.1.5",
         "@babel/preset-react": "^7.0.0",
         "babel-loader": "^8.0.4",
-        "css-loader": "^1.0.1",
-        "mini-css-extract-plugin": "^0.4.4",
+        "css-loader": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
         "node-sass": "^4.10.0",
-        "sass-loader": "^7.1.0",
-        "style-loader": "^0.23.1",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0",
         "webpack": "^4.25.1",
         "webpack-cli": "^3.1.2",
         "webpack-dev-server": "^3.1.10"
